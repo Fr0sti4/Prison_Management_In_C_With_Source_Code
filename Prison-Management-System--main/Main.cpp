@@ -464,11 +464,8 @@ void Prison ::SearchPrison()
 {
     int info;
     int CN;
-    int i;
     int s;
     int l;
-    int c = 0;
-    int p = 0;
 
     system("cls");
     cout << "\t\t\t\t    ----------------------------------------\n";
@@ -530,7 +527,9 @@ void Prison ::PrisonFile()
     system("cls");
 
     int format;
-    int s, c = 0, p = 0;
+    int s;
+    int c = 0;
+    int p = 0;
     cout << "\n\n\n";
     cout << "\t\t\t\t-----------------------------------------------------------------\n";
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
