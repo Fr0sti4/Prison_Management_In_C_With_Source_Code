@@ -2,6 +2,7 @@
 
 // username = admin
 // password = pass
+#define _CRT_SECURE_NO_WARNINGS
 #include <chrono>    // For std::chrono::milliseconds
 #include <thread>    // For std::this_thread::sleep_for
 #include <iostream>
@@ -228,7 +229,9 @@ void Prison ::Details()
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    -----------------------------------------------------\n";
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
-    int s, c = 0, p = 0;
+    int s = 0;
+    int c = 0; 
+    int p = 0;
 
     cout << "\n\t\t\t\t\t";
 
@@ -268,7 +271,9 @@ void Prison ::Details()
 
 void Prison ::Attendance()
 {
-    int s, l, c = 0;
+    int s = 0;
+    int l = 0;
+    int c = 0;
     char ch;
     do
     {
@@ -348,7 +353,10 @@ void Prison ::Attendance()
 
 void Prison ::Release()
 {
-    int s, l, c = 0, r;
+    int s = 0;
+    int l = 0;
+    int c = 0;
+    int r = 0;
     char ch;
     do
     {
@@ -455,8 +463,12 @@ void Prison ::Release()
 void Prison ::SearchPrison()
 {
     int info;
-    int CN, i, s, l;
-    int c = 0, p = 0;
+    int CN;
+    int i;
+    int s;
+    int l;
+    int c = 0;
+    int p = 0;
 
     system("cls");
     cout << "\t\t\t\t    ----------------------------------------\n";
