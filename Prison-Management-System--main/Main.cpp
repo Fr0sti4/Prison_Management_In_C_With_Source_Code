@@ -2,7 +2,8 @@
 
 // username = admin
 // password = pass
-
+#include <chrono>    // For std::chrono::milliseconds
+#include <thread>    // For std::this_thread::sleep_for
 #include <iostream>
 #include <conio.h>
 #include <string.h>
@@ -52,11 +53,8 @@ void Prison::Logout()
 
     for (int x = 0; x < 15; x++)
     {
-        for (int a = 0; a <= 100000000; a++)
-        {
-        }
         cout << ".";
-    }
+    }   
     Prison::Login();
 }
 
@@ -76,21 +74,13 @@ void Prison::Login()
         Time();
         cout << "\n\n\n\n\n\n";
         int a;
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    ----------------------------------------\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    |   PRISON STATION MANAGEMENT SYSTEM   |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    ----------------------------------------\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\n\n";
         cout << "\t\t\t\t\t";
         cout << "Username : ";
