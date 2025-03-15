@@ -53,6 +53,7 @@ void Prison::Logout()
 
     for (int x = 0; x < 15; x++)
     {
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << ".";
     }   
     Prison::Login();
@@ -73,7 +74,6 @@ void Prison::Login()
         system("cls");
         Time();
         cout << "\n\n\n\n\n\n";
-        int a;
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    ----------------------------------------\n";
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
@@ -151,24 +151,16 @@ void Prison ::SetData()
 {
     system("cls");
     Time();
-    int a, s;
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    int s;
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    -----------------------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    |                                                   |\n";
     cout << "\t\t\t\t    |         Enter basic information of prisoner       |\n";
     cout << "\t\t\t\t    |                                                   |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    -----------------------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\n\n";
     cout << "\t\t\t\t\t";
     cout << "Enter first name : ";
@@ -228,24 +220,15 @@ void Prison ::Details()
 {
     system("cls");
     Time();
-    int t;
-    for (t = 0; t <= 100000000; t++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    -----------------------------------------------------\n";
-    for (t = 0; t <= 100000000; t++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    |                                                   |\n";
     cout << "\t\t\t\t    |                Prisoner list                      |\n";
     cout << "\t\t\t\t    |                                                   |\n";
-    for (t = 0; t <= 100000000; t++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    -----------------------------------------------------\n";
-    for (t = 0; t <= 100000000; t++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     int s, c = 0, p = 0;
 
     cout << "\n\t\t\t\t\t";
@@ -293,24 +276,15 @@ void Prison ::Attendance()
         system("cls");
         Time();
         system("cls");
-        int t;
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    -----------------------------------------------------\n";
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    |                                                   |\n";
         cout << "\t\t\t\t    |           Prisoner attendance maintainer          |\n";
         cout << "\t\t\t\t    |                                                   |\n";
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    -----------------------------------------------------\n";
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
 
         cout << "\n\t\t\t\t\t";
         cout << "\n===========================================================================================================\n";
@@ -350,22 +324,15 @@ void Prison ::Attendance()
         }
         else
         {
-            int a;
             cout << "\t\t\t\t\t";
             cout << "\n";
             cout << "\t\t\t\t\t";
-            for (a = 0; a <= 100000000; a++)
-            {
-            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
             cout << "\t\t\t\t                                                    \n";
             cout << "\t\t\t\t    ------------------------------------------------\n";
-            for (a = 0; a <= 100000000; a++)
-            {
-            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
             cout << "\t\t\t\t    |             No prisoners present             |\n";
-            for (a = 0; a <= 100000000; a++)
-            {
-            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
             cout << "\t\t\t\t    ------------------------------------------------\n";
         }
 
@@ -474,22 +441,15 @@ void Prison ::Release()
         }
         else
         {
-            int a;
             cout << "\t\t\t\t\t";
             cout << "\n";
             cout << "\t\t\t\t\t";
-            for (a = 0; a <= 100000000; a++)
-            {
-            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
             cout << "\t\t\t\t                                                    \n";
             cout << "\t\t\t\t    ------------------------------------------------\n";
-            for (a = 0; a <= 100000000; a++)
-            {
-            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
             cout << "\t\t\t\t    |             No prisoners present             |\n";
-            for (a = 0; a <= 100000000; a++)
-            {
-            }
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
             cout << "\t\t\t\t    ------------------------------------------------\n";
             break;
         }
@@ -507,22 +467,16 @@ void Prison ::Release()
 void Prison ::SearchPrison()
 {
     int info;
-    int CN, i, a, s, l;
+    int CN, i, s, l;
     int c = 0, p = 0;
 
     system("cls");
     cout << "\t\t\t\t    ----------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    |             Search Menu              |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    ----------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\n\n";
     cout << "\t\t\t\t";
     cout << "Enter the prisoner cell id to be searched : ";
@@ -575,36 +529,24 @@ void Prison ::PrisonFile()
     Time();
     system("cls");
 
-    int format, a;
+    int format;
     int s, c = 0, p = 0;
     cout << "\n\n\n";
     cout << "\t\t\t\t-----------------------------------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t|                                                               |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t|                     1)   Txt File                             |\n";
     cout << "\t\t\t\t|                                                               |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t|                     2)   Html File                            |\n";
     cout << "\t\t\t\t|                                                               |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t|                     3)   Word File                            |\n";
     cout << "\t\t\t\t|                                                               |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t-----------------------------------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\n";
     cout << "\t\t\t\t";
     cout << "\n";
@@ -794,7 +736,7 @@ void Prison ::PrisonFile()
 
 void Prison ::Afterlogin()
 {
-    int a, c;
+    int c;
     int v;
     do
     {
@@ -803,61 +745,37 @@ void Prison ::Afterlogin()
         Time();
         cout << "\n\n\n";
         cout << "\t\t\t\t---------------------------------------------------------------------------\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     1)   New prisoner entry                             |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     2)   Prisoner details                               |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     3)   Attendace prisoner                             |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     4)   Release prisoner                               |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     5)   Search prisoner                                |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     6)   Prison File                                    |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     7)   Logout                                         |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                     8)   Exit                                           |\n";
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t|                                                                         |\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t---------------------------------------------------------------------------\n";
-        for (a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\n";
         cout << "\t\t\t\t\t\t\t";
         cout << "\n";
@@ -932,36 +850,21 @@ void FrontPage()
     Time();
     Date();
     cout << "\n";
-    int a;
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    ----------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    |   PRISON STATION MANAGEMENT SYSTEM   |\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\t\t\t\t    ----------------------------------------\n";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "\n\n";
     cout << "\t\t\t\t";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
    
     cout << "Mini Project   ";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << ":";
-    for (a = 0; a <= 100000000; a++)
-    {
-    }
+    std::this_thread::sleep_for(std::chrono::milliseconds(200));
     cout << "   Prison Management System";
     cout << "\n\n";
     cout << "\t\t\t\t";
@@ -973,9 +876,7 @@ void FrontPage()
 
     for (process = 0; process < 15; process++)
     {
-        for (int a = 0; a <= 100000000; a++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << ".";
     }
 }
