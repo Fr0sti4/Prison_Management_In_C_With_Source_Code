@@ -828,7 +828,7 @@ void Prison ::Exit()
 
 void Date()
 {
-    time_t T = time(NULL);
+    time_t T = time(nullptr);
     struct tm tm = *localtime(&T);
     cout << "\n\n\n";
     cout << "\t\t\t\t\t   Date: " << tm.tm_mday << "/" << tm.tm_mon + 1 << "/" << tm.tm_year + 1900 << "\n";
@@ -837,7 +837,7 @@ void Date()
 void Time()
 {
     time_t curr_time;
-    curr_time = time(NULL);
+    curr_time = time(nullptr);
 
     tm *tm_local = localtime(&curr_time);
     cout << "Time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec << endl;
