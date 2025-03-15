@@ -8,7 +8,7 @@
 #include <iostream>
 #include <conio.h>
 #include <string.h>
-#include <windows.h>
+#include <Windows.h>
 #include <fstream>
 #include <ctime>
 using namespace std;
@@ -827,24 +827,25 @@ void Prison ::Exit()
 
 void Date()
 {
-    time_t T = time(nullptr);
-    struct tm tm = *localtime(&T);
-    cout << "\n\n\n";
-    cout << "\t\t\t\t\t   Date: " << tm.tm_mday << "/" << tm.tm_mon + 1 << "/" << tm.tm_year + 1900 << "\n";
+    auto now = std::chrono::system_clock::now();
+    std::time_t T = std::chrono::system_clock::to_time_t(now);
+    std::tm tm = *std::localtime(&T);
+
+    std::cout << "\n\n\n";
+    std::cout << "\t\t\t\t\t   Date: " << tm.tm_mday << "/" << tm.tm_mon + 1 << "/" << tm.tm_year + 1900 << "\n";
 }
 
 void Time()
 {
-    time_t curr_time;
-    curr_time = time(nullptr);
+    auto now = std::chrono::system_clock::now();
+    std::time_t curr_time = std::chrono::system_clock::to_time_t(now);
+    std::tm tm_local = *std::localtime(&curr_time);
 
-    tm *tm_local = localtime(&curr_time);
-    cout << "Time : " << tm_local->tm_hour << ":" << tm_local->tm_min << ":" << tm_local->tm_sec << endl;
+    std::cout << "Time : " << tm_local.tm_hour << ":" << tm_local.tm_min << ":" << tm_local.tm_sec << std::endl;
 }
 
 void FrontPage()
 {
-    int process = 0;
     system("cls");
     Time();
     Date();
@@ -873,7 +874,7 @@ void FrontPage()
     system("pause");
     cout << "\n\t\t\t\tLoading";
 
-    for (process = 0; process < 15; process++)
+    for (int process = 0; process < 15; process++)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << ".";
