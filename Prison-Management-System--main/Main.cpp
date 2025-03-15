@@ -20,14 +20,15 @@ class Prison
 private:
     // Detaiils of Prisoner
     std::array<std::string, 20> First_Name = { "" };
-    string Second_Name[20];
-    string Gender[20];
-    int CellNo[20] = {1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020};
-    int Age[20];
-    double Height[20];
-    string Eyecolor[20];
-    string Crime[20];
-    int Punishmentmonths[20];
+    std::array<std::string, 20> Second_Name;
+    std::array<std::string, 20> Gender;
+    std::array<int, 20> CellNo = { 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010,
+                              1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020 };
+    std::array<int, 20> Age;
+    std::array<double, 20> Height;
+    std::array<std::string, 20> Eyecolor;
+    std::array<std::string, 20> Crime;
+    std::array<std::string, 20> Punishmentmonths;
     int o = 0;
 
 public:
