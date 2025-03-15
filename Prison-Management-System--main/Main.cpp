@@ -19,7 +19,7 @@ class Prison
 {
 private:
     // Detaiils of Prisoner
-    string First_Name[20] = {" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "};
+    std::array<std::string, 20> First_Name = { "" };
     string Second_Name[20];
     string Gender[20];
     int CellNo[20] = {1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020};
