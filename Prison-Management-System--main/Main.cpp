@@ -62,12 +62,11 @@ void Prison::Logout()
 void Prison::Login()
 {
 
-    char Username[15];
-    char Password[15];
+    std::array<std::string, 15> Username;
+    std::array<std::string, 15> Password;
     char Epwd;
     int true1 = 1;
     int try1 = 0;
-    int i = 0;
 
     do
     {
@@ -355,24 +354,15 @@ void Prison ::Release()
     {
         system("cls");
         Time();
-        int t;
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    -----------------------------------------------------\n";
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    |                                                   |\n";
         cout << "\t\t\t\t    |                Release prisoner                   |\n";
         cout << "\t\t\t\t    |                                                   |\n";
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
         cout << "\t\t\t\t    -----------------------------------------------------\n";
-        for (t = 0; t <= 100000000; t++)
-        {
-        }
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
 
         cout << "\n\t\t\t\t\t";
         cout << "\n===========================================================================================================\n";
@@ -419,9 +409,7 @@ void Prison ::Release()
 
                     for (int process = 0; process < 7; process++)
                     {
-                        for (int a = 0; a <= 100000000; a++)
-                        {
-                        }
+                        std::this_thread::sleep_for(std::chrono::milliseconds(200));
                         cout << ".";
                     }
                     cout << "\n\t\t\t\t\t";
