@@ -828,20 +828,24 @@ void Prison ::Exit()
 void Date()
 {
     auto now = std::chrono::system_clock::now();
-    std::time_t T = std::chrono::system_clock::to_time_t(now);
-    std::tm tm = *std::localtime(&T);
+    auto time_zone = std::chrono::current_zone(); // Get current time zone
+    auto zoned_time = std::chrono::zoned_time(time_zone, now);  // Convert to zoned time
 
+    // Format and output the date
     std::cout << "\n\n\n";
-    std::cout << "\t\t\t\t\t   Date: " << tm.tm_mday << "/" << tm.tm_mon + 1 << "/" << tm.tm_year + 1900 << "\n";
+    std::cout << "\t\t\t\t\t   Date: "
+        << std::chrono::format("{:%d/%m/%Y}", zoned_time) << "\n";
 }
 
 void Time()
 {
     auto now = std::chrono::system_clock::now();
-    std::time_t curr_time = std::chrono::system_clock::to_time_t(now);
-    std::tm tm_local = *std::localtime(&curr_time);
+    auto time_zone = std::chrono::current_zone(); // Get current time zone
+    auto zoned_time = std::chrono::zoned_time(time_zone, now);  // Convert to zoned time
 
-    std::cout << "Time : " << tm_local.tm_hour << ":" << tm_local.tm_min << ":" << tm_local.tm_sec << std::endl;
+    // Format and output the time
+    std::cout << "Time : "
+        << std::chrono::format("{:%H:%M:%S}", zoned_time) << std::endl;
 }
 
 void FrontPage()
